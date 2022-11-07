@@ -23,3 +23,46 @@ let students = [
 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
 
+/* Snack-1 */
+
+/* const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+
+const NumeroMinimo = 2
+
+const NumeroMassimo = 5
+
+
+const nomiNuovi = myArray.filter((element, index) => {
+
+    if(index < 5 && index > 2){
+        return element
+    }
+
+})
+
+console.log(nomiNuovi)
+ */
+
+/* Snack-2 */
+
+let students = [
+    { name: 'Marco', id: 213, grades: 78 },
+    { name: 'Paola', id: 110, grades: 96 },
+    { name: 'Andrea', id: 250, grades: 48 },
+    { name: 'Gaia', id: 145, grades: 74 },
+    { name: 'Luigi', id: 196, grades: 68 },
+    { name: 'Piero', id: 102, grades: 50 },
+    { name: 'Francesca', id: 120, grades: 84 },
+  ];
+
+  
+
+
+
+
+
+
+
+
+
+
