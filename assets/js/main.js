@@ -25,7 +25,7 @@ let students = [
 
 /* Snack-1 */
 
-/* const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
 const NumeroMinimo = 2
 
@@ -41,7 +41,8 @@ const nomiNuovi = myArray.filter((element, index) => {
 })
 
 console.log(nomiNuovi)
- */
+
+ 
 
 /* Snack-2 */
 
@@ -55,7 +56,50 @@ let students = [
     { name: 'Francesca', id: 120, grades: 84 },
   ];
 
-  
+
+
+const nomiMaiuscolo = students.map((element) => {
+
+    return element.name.toUpperCase()
+
+})
+
+console.log(nomiMaiuscolo)
+
+
+
+const votoSudente = students.filter((element) => {
+
+if(element.grades > 70){
+
+   element
+
+   return true
+    
+}
+
+})
+
+console.log(votoSudente) 
+
+
+const votoIdSudente = students.filter((element) => {
+
+if(element.grades > 70 && element.id > 120){
+
+   element
+
+   return true
+    
+}
+
+})
+
+console.log(votoIdSudente) 
+
+
+
+
 
 
 
