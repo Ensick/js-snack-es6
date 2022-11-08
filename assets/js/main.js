@@ -25,7 +25,7 @@ let students = [
 
 /* Snack-1 */
 
-const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+/* const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
 const NumeroMinimo = 2
 
@@ -46,7 +46,7 @@ console.log(nomiNuovi)
 
 /* Snack-2 */
 
-let students = [
+/* let students = [
     { name: 'Marco', id: 213, grades: 78 },
     { name: 'Paola', id: 110, grades: 96 },
     { name: 'Andrea', id: 250, grades: 48 },
@@ -95,7 +95,85 @@ if(element.grades > 70 && element.id > 120){
 
 })
 
-console.log(votoIdSudente) 
+console.log(votoIdSudente)  */
+
+
+/* 
+Snack 3
+Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+
+Snack4
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti. Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */
+
+
+
+/* Snack-3 */
+
+const arrayBici = [
+
+  {
+    nome : "BMX",
+    peso : 10
+  },
+
+  {
+    nome : "Mountain-Bike",
+    peso : 15
+  },
+
+  {
+    nome : "Speed-Bike",
+    peso : 5
+  },
+
+  {
+    nome : "Speed-Bike-v2",
+    peso : 3
+  }
+
+]
+
+const {nome,peso} = arrayBici[3]
+
+console.log(nome,peso)
+
+document.getElementById("biciLeggera").innerHTML = `La bici più leggera è: ${nome} con un peso di ${peso}kg `
+
+/* Snack-4  */
+
+const squadreCalcio = [
+  {
+    nome : "Roma",
+    punti : 0,
+    falli : 0
+  },
+
+  {
+    nome : "Napoli",
+    punti : 0,
+    falli : 0
+  },
+
+  {
+    nome : "Fiorentina",
+    punti : 0,
+    falli : 0
+  },
+
+  {
+    nome : "Milan",
+    punti : 0,
+    falli : 0
+  }
+
+]
+
+
+
+
+
+
 
 
 
