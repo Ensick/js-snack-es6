@@ -142,32 +142,55 @@ document.getElementById("biciLeggera").innerHTML = `La bici più leggera è: ${n
 
 /* Snack-4  */
 
-const squadreCalcio = [
+let squadreCalcio = [
   {
-    nome : "Roma",
+    squadra : "Roma",
     punti : 0,
     falli : 0
   },
 
   {
-    nome : "Napoli",
+    squadra : "Napoli",
     punti : 0,
     falli : 0
   },
 
   {
-    nome : "Fiorentina",
+    squadra : "Fiorentina",
     punti : 0,
     falli : 0
   },
 
   {
-    nome : "Milan",
+    squadra : "Milan",
     punti : 0,
     falli : 0
   }
 
 ]
+
+
+function cpuNumberGenerator(min,max){
+
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+let arraySquadraFalli = []
+
+squadreCalcio.forEach(element => {
+
+  element.punti = cpuNumberGenerator(1,100)
+
+  element.falli = cpuNumberGenerator(1,100)
+
+  arraySquadraFalli.push(element.squadra, element.falli)
+
+})
+
+console.log(squadreCalcio)
+
+console.log(arraySquadraFalli)
+
 
 
 
